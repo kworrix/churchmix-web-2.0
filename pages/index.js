@@ -6,3 +6,4 @@ export default function Home() {
     </main>
   );
 }
+<a className="underline text-blue-600" href="/about">About</a>
