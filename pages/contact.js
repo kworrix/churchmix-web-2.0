@@ -4,7 +4,7 @@ export default function Contact() {
       <h1>Contact</h1>
       <p>Send us a message and we’ll get back to you.</p>
 
-      <form action="https://formspree.io/f/REPLACE_WITH_YOUR_ID" method="POST" style={{ marginTop: 16, maxWidth: 480 }}>
+      <form action="https://formspree.io/f/mblkbyko" method="POST" style={{ marginTop: 16, maxWidth: 480 }}>
         <label htmlFor="email">Your email</label><br/>
         <input id="email" name="email" type="email" required style={{ width:'100%', padding:8, margin:'6px 0 12px', border:'1px solid #ccc', borderRadius:6 }} />
 
