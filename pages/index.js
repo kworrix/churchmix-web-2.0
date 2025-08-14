@@ -4,7 +4,7 @@ export default function Home() {
       <h1>Hello from ChurchMix</h1>
       <p>If you can see this page, the build worked 🎉</p>
 
-      {/* The link must be INSIDE the component JSX */}
+      {/* keep the link INSIDE the component */}
       <a className="underline" href="/about">About</a>
     </main>
   );
