@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <main style={{ padding: 24, fontFamily: 'system-ui, sans-serif', textAlign: 'center' }}>
       <img 
-        src="/logo.jpeg" 
+        src="/PRAISEMIX.png" 
         alt="PraiseMix Logo" 
         style={{ maxWidth: '240px', marginBottom: '24px' }} 
       />
