@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
     <main style={{ padding: 24, fontFamily: 'system-ui, sans-serif' }}>
-      <h1>Contact</h1>
+      <h1>Contact 🚀</h1>
       <p>Send us a message and we’ll get back to you.</p>
 
       <form action="https://formspree.io/f/mblkbyko" method="POST" style={{ marginTop: 16, maxWidth: 480 }}>
