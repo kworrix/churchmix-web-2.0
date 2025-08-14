@@ -13,7 +13,7 @@ export default function App({ Component, pageProps }) {
         {/* Logo links back to home */}
         <a href="/" style={{ display: 'flex', alignItems: 'center', marginRight: 'auto' }}>
           <img
-            src="/logo.jpeg"
+            src="/praisemix.png"
             alt="PraiseMix Logo"
             style={{ height: 40, marginRight: 12 }}
           />
