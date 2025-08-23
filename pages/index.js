@@ -4,11 +4,11 @@ export default function Home() {
       <section className="grid md:grid-cols-2 gap-8 items-center">
         <div className="space-y-6">
           <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900">
-            Connect churches with expert broadcast mix engineers.
+            Connecting churches with expert broadcast mix engineers.
           </h1>
           <p className="text-lg text-gray-700">
-            PraiseMix is a simple way for churches to find vetted engineers for live and online services — fast,
-            reliable, and fairly priced.
+            PraiseMix is a simple way for churches to find vetted engineers for remote broadcast mix services — fast,
+            reliable, safe.
           </p>
           <div className="flex gap-3">
             <a href="/contact" className="inline-flex items-center rounded-lg bg-black text-white px-5 py-3 no-underline">
