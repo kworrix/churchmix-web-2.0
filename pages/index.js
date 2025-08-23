@@ -11,13 +11,16 @@ export default function Home() {
             reliable, safe.
           </p>
           <div className="flex gap-3">
-            <a href="/contact" className="inline-flex items-center rounded-lg bg-black text-white px-5 py-3 no-underline">
-              Get in touch
-            </a>
-            <a href="/about" className="inline-flex items-center rounded-lg border px-5 py-3 bg-white text-gray-900 no-underline">
-              Learn more
-            </a>
-          </div>
+  {/* Primary: Church signup */}
+  <a href="/signup/church" className="inline-flex items-center rounded-lg bg-black text-white px-5 py-3 no-underline">
+    Find an Engineer
+  </a>
+  {/* Secondary: About */}
+  <a href="/about" className="inline-flex items-center rounded-lg border px-5 py-3 bg-white text-gray-900 no-underline">
+    Learn more
+  </a>
+</div>
+
         </div>
         <div className="rounded-xl border bg-white p-6 shadow-sm">
           <img src="/praisemix.jpg" alt="PraiseMix" className="w-full h-auto rounded-lg" />
