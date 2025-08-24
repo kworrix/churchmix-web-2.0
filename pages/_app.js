@@ -13,7 +13,7 @@ export default function App({ Component, pageProps }) {
   <a href="/" className="no-underline">Home</a>
   <a href="/about" className="no-underline">About</a>
   <a href="/contact" className="no-underline">Contact</a>
-  <a href="/signup/church" className="no-underline font-semibold">Church Sign Up</a>
+  <a href="/signup/church" className="no-underline">Church Sign Up</a>
   <a href="/signup/engineer" className="no-underline">Engineer Sign Up</a>
 </nav>
 
