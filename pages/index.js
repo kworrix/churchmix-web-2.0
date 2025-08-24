@@ -39,6 +39,21 @@ export default function Home() {
           <h3 className="font-semibold text-lg">Serve with confidence</h3>
           <p className="text-gray-700 text-sm">Clear expectations and easy communication. Payments handled securely.</p>
         </div>
+
+<section className="mt-16">
+  <div className="rounded-xl border bg-white p-6 flex items-center justify-between">
+    <div>
+      <h3 className="font-semibold text-lg">Are you a broadcast mix engineer?</h3>
+      <p className="text-gray-700 text-sm">Join the PraiseMix network and get matched with churches.</p>
+    </div>
+    <a href="/signup/engineer" className="inline-flex items-center rounded-lg bg-black text-white px-4 py-2 no-underline">
+      Engineer Sign Up
+    </a>
+  </div>
+</section>
+
+
+    
       </section>
     </main>
   );
