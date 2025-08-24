@@ -12,6 +12,7 @@ export default function App({ Component, pageProps }) {
           <nav className="ml-auto flex items-center gap-5">
   <a href="/" className="no-underline">Home</a>
   <a href="/about" className="no-underline">About</a>
+    <a href="/how-it-works" className="no-underline">How it works</a>
   <a href="/contact" className="no-underline">Contact</a>
   <a href="/signup/church" className="no-underline">Church Sign Up</a>
   <a href="/signup/engineer" className="no-underline">Engineer Sign Up</a>
