@@ -1,89 +1,110 @@
 export default function HowItWorks() {
   return (
-    <main className="mx-auto max-w-4xl px-4 py-16">
+    <main className="mx-auto max-w-5xl px-4 py-16">
       <h1 className="text-3xl font-bold">How It Works</h1>
       <p className="mt-4 text-gray-700">
         Post a job, choose your engineer, then connect through RemoteMix to deliver a clear, consistent broadcast mix.
       </p>
 
-      {/* Visual step diagram */}
+      {/* Step cards */}
       <section className="mt-10 grid gap-6 md:grid-cols-3">
-        <div className="rounded-xl border bg-white p-6 shadow-sm">
+        {/* Step 1 */}
+        <div className="group rounded-2xl border bg-white p-6 shadow-sm hover:shadow-md transition">
           <div className="flex items-center gap-3">
-            <div className="h-10 w-10 rounded-lg bg-black text-white flex items-center justify-center font-semibold">1</div>
+            {/* Circle number (pure CSS) */}
+            <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-black text-white font-semibold">
+              1
+            </span>
             <h3 className="text-lg font-semibold">Post a Job</h3>
           </div>
           <p className="mt-3 text-gray-700">
-            Create a request for a set time window (e.g., <em>Sunday 10–12</em>). Include console model, service details, and any special needs.
+            Create a request for a set time window (e.g., <em>Sunday 10–12</em>). Include console model, service details,
+            and any special needs.
           </p>
+          {/* tiny underline flourish on hover (pure CSS) */}
+          <span className="mt-4 block h-[2px] w-0 bg-black transition-all duration-300 group-hover:w-16" />
         </div>
 
-        <div className="rounded-xl border bg-white p-6 shadow-sm">
+        {/* Step 2 */}
+        <div className="group rounded-2xl border bg-white p-6 shadow-sm hover:shadow-md transition">
           <div className="flex items-center gap-3">
-            <div className="h-10 w-10 rounded-lg bg-black text-white flex items-center justify-center font-semibold">2</div>
+            <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-black text-white font-semibold">
+              2
+            </span>
             <h3 className="text-lg font-semibold">Engineers Bid</h3>
           </div>
           <p className="mt-3 text-gray-700">
             Qualified engineers submit availability and rates. Compare profiles to choose the best fit.
           </p>
+          <span className="mt-4 block h-[2px] w-0 bg-black transition-all duration-300 group-hover:w-16" />
         </div>
 
-        <div className="rounded-xl border bg-white p-6 shadow-sm">
+        {/* Step 3 */}
+        <div className="group rounded-2xl border bg-white p-6 shadow-sm hover:shadow-md transition">
           <div className="flex items-center gap-3">
-            <div className="h-10 w-10 rounded-lg bg-black text-white flex items-center justify-center font-semibold">3</div>
+            <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-black text-white font-semibold">
+              3
+            </span>
             <h3 className="text-lg font-semibold">Connect via RemoteMix</h3>
           </div>
           <p className="mt-3 text-gray-700">
-            After selection, both sides connect devices through <span className="font-medium">RemoteMix</span> for a secure, low-latency session.
+            After selection, both sides connect devices through <span className="font-medium">RemoteMix</span> for a secure,
+            low-latency session.
           </p>
+          <span className="mt-4 block h-[2px] w-0 bg-black transition-all duration-300 group-hover:w-16" />
         </div>
       </section>
 
       {/* Requirements */}
       <section className="mt-12 grid gap-10 md:grid-cols-2">
-        <div>
+        <div className="rounded-2xl border bg-white p-6">
           <h2 className="text-xl font-semibold">What Churches Need</h2>
           <ul className="mt-3 list-disc pl-5 space-y-2 text-gray-800">
-            <li>A <span className="font-medium">digital soundboard</span> that can send stems or multitrack outs to RemoteMix.</li>
+            <li>
+              A <span className="font-medium">digital soundboard</span> that can send stems or multitrack outs to RemoteMix.
+            </li>
             <li>Stable <span className="font-medium">internet</span> at the venue.</li>
             <li>An onsite helper to confirm routing and signal.</li>
           </ul>
         </div>
 
-        <div>
+        <div className="rounded-2xl border bg-white p-6">
           <h2 className="text-xl font-semibold">What Engineers Need</h2>
           <ul className="mt-3 list-disc pl-5 space-y-2 text-gray-800">
-            <li>A quality <span className="font-medium">mix setup</span>: capable computer + DAW/mixing tools.</li>
+            <li>
+              A quality <span className="font-medium">mix setup</span>: capable computer + DAW/mixing tools.
+            </li>
             <li>Reliable <span className="font-medium">internet</span> for RemoteMix.</li>
-            <li>Accurate monitoring (good headphones and/or studio monitors).</li>
+            <li>Accurate monitoring (headphones and/or studio monitors).</li>
             <li>Experience with live/broadcast mixing.</li>
           </ul>
         </div>
       </section>
 
-      {/* Timeline strip */}
+      {/* Timeline (pure CSS dots & connectors) */}
       <section className="mt-12">
         <h2 className="text-xl font-semibold">Typical Timeline</h2>
-        <div className="mt-4 overflow-x-auto">
-          <ol className="min-w-[640px] grid grid-cols-4 items-center text-sm">
-            <li className="relative flex items-center gap-2">
-              <span className="h-3 w-3 rounded-full bg-black inline-block" />
-              Post job
-              <span className="mx-2 h-[2px] bg-gray-300 w-full inline-block" />
+        <div className="mt-6 overflow-x-auto">
+          <ol className="min-w-[720px] grid grid-cols-4 items-center text-sm">
+            {/* Each step: dot + label + connector line (except last) */}
+            <li className="relative flex items-center gap-3">
+              <span className="inline-block h-3 w-3 rounded-full bg-black" />
+              <span>Post job</span>
+              <span className="mx-3 h-[2px] w-full bg-gray-300" />
             </li>
-            <li className="relative flex items-center gap-2">
-              <span className="h-3 w-3 rounded-full bg-black inline-block" />
-              Receive bids
-              <span className="mx-2 h-[2px] bg-gray-300 w-full inline-block" />
+            <li className="relative flex items-center gap-3">
+              <span className="inline-block h-3 w-3 rounded-full bg-black" />
+              <span>Receive bids</span>
+              <span className="mx-3 h-[2px] w-full bg-gray-300" />
             </li>
-            <li className="relative flex items-center gap-2">
-              <span className="h-3 w-3 rounded-full bg-black inline-block" />
-              Select engineer
-              <span className="mx-2 h-[2px] bg-gray-300 w-full inline-block" />
+            <li className="relative flex items-center gap-3">
+              <span className="inline-block h-3 w-3 rounded-full bg-black" />
+              <span>Select engineer</span>
+              <span className="mx-3 h-[2px] w-full bg-gray-300" />
             </li>
-            <li className="relative flex items-center gap-2">
-              <span className="h-3 w-3 rounded-full bg-black inline-block" />
-              Connect & mix
+            <li className="relative flex items-center gap-3">
+              <span className="inline-block h-3 w-3 rounded-full bg-black" />
+              <span>Connect &amp; mix</span>
             </li>
           </ol>
         </div>
