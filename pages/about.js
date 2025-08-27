@@ -1,91 +1,64 @@
 export default function About() {
   return (
     <main className="mx-auto max-w-3xl px-4 py-16">
-      <h1 className="text-3xl font-bold">How PraiseMix Works</h1>
+      <h1 className="text-3xl font-bold">About PraiseMix</h1>
+
       <p className="mt-4 text-gray-700">
-  PraiseMix connects churches with skilled broadcast mix engineers for remote services.
-  Post a job, choose your engineer, and they’ll guide the connection using
-  <span className="font-medium"> RemoteMix</span>—a pro-grade, low-latency link that keeps setup simple and reliable.
-</p>
+        At PraiseMix, we believe every church deserves a clear, reliable broadcast mix—
+        whether you’re streaming to a few families at home or thousands across the world.
+      </p>
 
+      <p className="mt-4 text-gray-700">
+        Too often, churches rely on volunteers who are passionate but under-trained, or
+        on a single overworked staff member who can’t be everywhere at once. The result?
+        Inconsistent sound that distracts from the message.
+      </p>
 
-      {/* How it works */}
-      <section className="mt-10 space-y-6">
-        <h2 className="text-xl font-semibold">Step-by-Step</h2>
-        <ol className="list-decimal pl-6 space-y-3 text-gray-800">
-          <li>
-            <span className="font-medium">Church posts a job.</span> Create a request for a set time window
-            (e.g., <em>Sunday 10:00–12:00</em>). Include your service details, soundboard model, and any special needs.
-          </li>
-          <li>
-            <span className="font-medium">Engineers bid.</span> Qualified engineers submit their availability and rate.
-            Compare profiles, experience, and price to pick the best fit.
-          </li>
-          <li>
-  <span className="font-medium">Connect via RemoteMix (engineer-guided).</span>
-  After you select an engineer, they’ll host a RemoteMix session and walk you through a quick check.
-  The link provides a secure, low-latency path so your broadcast sounds consistent and clear.
-</li>
+      <p className="mt-4 text-gray-700">
+        That’s why we built PraiseMix: a simple way for churches to connect with skilled,
+        independent broadcast mix engineers. These engineers bring the technical expertise,
+        the right tools, and a heart to serve—so you can focus on ministry instead of worrying
+        about the mix.
+      </p>
 
-        </ol>
-      </section>
-
-<section className="mt-10">
-  <h2 className="text-xl font-semibold">Why RemoteMix?</h2>
-  <ul className="mt-3 list-disc pl-5 space-y-2 text-gray-800">
-    <li><span className="font-medium">Pro-grade audio:</span> designed for clean, low-latency broadcast connections.</li>
-    <li><span className="font-medium">Engineer-led setup:</span> your engineer hosts the session and handles the moving parts.</li>
-    <li><span className="font-medium">Simple for churches:</span> with a digital console and stable internet, you’re set.</li>
-    <li><span className="font-medium">Secure & dependable:</span> a dedicated link for predictable results week after week.</li>
-  </ul>
-</section>
-
-  
-
-      {/* Requirements */}
-      <section className="mt-12 grid gap-10 md:grid-cols-2">
-        <div>
-          <h3 className="text-lg font-semibold">What Churches Need</h3>
-          <ul className="mt-3 list-disc pl-5 space-y-2 text-gray-800">
-            <li>
-  A <span className="font-medium">digital soundboard</span> that can send stems or multitrack outs.
-  Your engineer will advise the easiest routing into RemoteMix.
-</li>
-
-            <li>Stable <span className="font-medium">internet</span> at the venue.</li>
-            <li>An onsite helper to confirm the console is routed and sending audio correctly.</li>
-          </ul>
-        </div>
-        <div>
-          <h3 className="text-lg font-semibold">What Engineers Need</h3>
-          <ul className="mt-3 list-disc pl-5 space-y-2 text-gray-800">
-            <li>
-  A quality <span className="font-medium">mix setup</span> (capable computer + DAW/mixing tools) to host the RemoteMix session.
-</li>
-
-            <li>Reliable <span className="font-medium">internet</span> for the RemoteMix session.</li>
-            <li>Accurate monitoring (good headphones and/or studio monitors).</li>
-            <li>Experience with live/broadcast mixing to adapt quickly to the church’s style.</li>
-          </ul>
-        </div>
-      </section>
-
-      {/* Outcome */}
-      <section className="mt-12">
-        <h3 className="text-lg font-semibold">The Outcome</h3>
+      <section className="mt-10">
+        <h2 className="text-xl font-semibold">Our Mission</h2>
         <p className="mt-3 text-gray-700">
-          Churches get a clear, consistent broadcast mix without needing an in-house specialist. Engineers gain meaningful
-          opportunities to serve remotely. PraiseMix keeps the process simple—posting, selecting, connecting, and handling
-          communication and payments—so everyone can focus on what matters.
+          We exist to make professional-quality broadcast mixing accessible to every church,
+          no matter the size. By creating a network of trusted engineers, we help ministries
+          sound their best while giving engineers meaningful opportunities to serve and earn.
         </p>
       </section>
 
-      {/* CTAs */}
+      <section className="mt-10">
+        <h2 className="text-xl font-semibold">Why It Matters</h2>
+        <ul className="mt-3 list-disc pl-5 space-y-2 text-gray-800">
+          <li>
+            <span className="font-medium">For churches:</span> A clear mix helps your
+            congregation engage more deeply, whether they’re in the room or online.
+          </li>
+          <li>
+            <span className="font-medium">For engineers:</span> A chance to use your skills
+            in ministry, reach more churches, and support yourself doing work you love.
+          </li>
+          <li>
+            <span className="font-medium">For everyone:</span> The message is heard, free
+            from distraction, with sound that matches the spirit of the service.
+          </li>
+        </ul>
+      </section>
+
       <section className="mt-12 flex flex-wrap gap-3">
-        <a href="/signup/church" className="inline-flex items-center rounded-lg bg-black px-5 py-3 text-white no-underline">
+        <a
+          href="/signup/church"
+          className="inline-flex items-center rounded-lg bg-black px-5 py-3 text-white no-underline"
+        >
           Church Sign Up
         </a>
-        <a href="/signup/engineer" className="inline-flex items-center rounded-lg border px-5 py-3 bg-white text-gray-900 no-underline">
+        <a
+          href="/signup/engineer"
+          className="inline-flex items-center rounded-lg border px-5 py-3 bg-white text-gray-900 no-underline"
+        >
           Engineer Sign Up
         </a>
       </section>
