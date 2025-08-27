@@ -3,9 +3,11 @@ export default function About() {
     <main className="mx-auto max-w-3xl px-4 py-16">
       <h1 className="text-3xl font-bold">How PraiseMix Works</h1>
       <p className="mt-4 text-gray-700">
-        PraiseMix makes it simple for churches to connect with skilled broadcast mix engineers for remote services.
-        Post a job, choose your engineer, then connect through RemoteMix to get a clean, professional broadcast mix.
-      </p>
+  PraiseMix connects churches with skilled broadcast mix engineers for remote services.
+  Post a job, choose your engineer, and they’ll guide the connection using
+  <span className="font-medium"> RemoteMix</span>—a pro-grade, low-latency link that keeps setup simple and reliable.
+</p>
+
 
       {/* How it works */}
       <section className="mt-10 space-y-6">
@@ -20,18 +22,36 @@ export default function About() {
             Compare profiles, experience, and price to pick the best fit.
           </li>
           <li>
-            <span className="font-medium">Connect via RemoteMix.</span> After you select an engineer, both sides use
-            <span className="font-semibold"> RemoteMix</span> to establish a secure, low-latency audio link for mixing.
-          </li>
+  <span className="font-medium">Connect via RemoteMix (engineer-guided).</span>
+  After you select an engineer, they’ll host a RemoteMix session and walk you through a quick check.
+  The link provides a secure, low-latency path so your broadcast sounds consistent and clear.
+</li>
+
         </ol>
       </section>
+
+<section className="mt-10">
+  <h2 className="text-xl font-semibold">Why RemoteMix?</h2>
+  <ul className="mt-3 list-disc pl-5 space-y-2 text-gray-800">
+    <li><span className="font-medium">Pro-grade audio:</span> designed for clean, low-latency broadcast connections.</li>
+    <li><span className="font-medium">Engineer-led setup:</span> your engineer hosts the session and handles the moving parts.</li>
+    <li><span className="font-medium">Simple for churches:</span> with a digital console and stable internet, you’re set.</li>
+    <li><span className="font-medium">Secure & dependable:</span> a dedicated link for predictable results week after week.</li>
+  </ul>
+</section>
+
+  
 
       {/* Requirements */}
       <section className="mt-12 grid gap-10 md:grid-cols-2">
         <div>
           <h3 className="text-lg font-semibold">What Churches Need</h3>
           <ul className="mt-3 list-disc pl-5 space-y-2 text-gray-800">
-            <li>A <span className="font-medium">digital soundboard</span> that can send stems or multitrack outputs to RemoteMix.</li>
+            <li>
+  A <span className="font-medium">digital soundboard</span> that can send stems or multitrack outs.
+  Your engineer will advise the easiest routing into RemoteMix.
+</li>
+
             <li>Stable <span className="font-medium">internet</span> at the venue.</li>
             <li>An onsite helper to confirm the console is routed and sending audio correctly.</li>
           </ul>
@@ -39,7 +59,10 @@ export default function About() {
         <div>
           <h3 className="text-lg font-semibold">What Engineers Need</h3>
           <ul className="mt-3 list-disc pl-5 space-y-2 text-gray-800">
-            <li>A quality <span className="font-medium">mixing setup</span>: capable computer + DAW/mixing tools.</li>
+            <li>
+  A quality <span className="font-medium">mix setup</span> (capable computer + DAW/mixing tools) to host the RemoteMix session.
+</li>
+
             <li>Reliable <span className="font-medium">internet</span> for the RemoteMix session.</li>
             <li>Accurate monitoring (good headphones and/or studio monitors).</li>
             <li>Experience with live/broadcast mixing to adapt quickly to the church’s style.</li>
