@@ -48,12 +48,20 @@ export default function HowItWorks() {
             <h3 className="text-lg font-semibold">Connect via RemoteMix</h3>
           </div>
           <p className="mt-3 text-gray-700">
-            After selection, both sides connect devices through <span className="font-medium">RemoteMix</span> for a secure,
-            low-latency session.
-          </p>
+  After selection, your engineer hosts a <span className="font-medium">RemoteMix</span> session and guides a quick sound-check.
+  It’s a secure, low-latency link that keeps your mix consistent and clear.
+</p>
+
           <span className="mt-4 block h-[2px] w-0 bg-black transition-all duration-300 group-hover:w-16" />
         </div>
       </section>
+
+<p className="mt-6 text-sm text-gray-600">
+  Don’t sweat the tech — your engineer leads the connection. If you have a digital console and stable internet,
+  you’re already most of the way there.
+</p>
+
+  
 
       {/* Requirements */}
       <section className="mt-12 grid gap-10 md:grid-cols-2">
@@ -109,6 +117,27 @@ export default function HowItWorks() {
           </ol>
         </div>
       </section>
+
+
+<section className="mt-12">
+  <h2 className="text-xl font-semibold">FAQs</h2>
+  <div className="mt-4 space-y-4 text-gray-800">
+    <div>
+      <p className="font-medium">Do we need a RemoteMix account?</p>
+      <p className="text-gray-700">
+        Your engineer can host the session and share the link. If a separate account helps your workflow later, we’ll guide you.
+      </p>
+    </div>
+    <div>
+      <p className="font-medium">What if our console is older?</p>
+      <p className="text-gray-700">
+        Many digital boards can send stems or a stereo bus. Your engineer will recommend the simplest routing for your setup.
+      </p>
+    </div>
+  </div>
+</section>
+
+  
 
       {/* CTAs */}
       <section className="mt-12 flex flex-wrap gap-3">
