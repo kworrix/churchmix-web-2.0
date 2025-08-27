@@ -65,16 +65,23 @@ export default function HowItWorks() {
 
       {/* Requirements */}
       <section className="mt-12 grid gap-10 md:grid-cols-2">
-        <div className="rounded-2xl border bg-white p-6">
-          <h2 className="text-xl font-semibold">What Churches Need</h2>
-          <ul className="mt-3 list-disc pl-5 space-y-2 text-gray-800">
-            <li>
-              A <span className="font-medium">digital soundboard</span> that can send stems or multitrack outs to RemoteMix.
-            </li>
-            <li>Stable <span className="font-medium">internet</span> at the venue.</li>
-            <li>An onsite helper to confirm routing and signal.</li>
-          </ul>
-        </div>
+        <div>
+  <h3 className="text-lg font-semibold">What Churches Need</h3>
+  <ul className="mt-3 list-disc pl-5 space-y-2 text-gray-800">
+    <li>
+      A <span className="font-medium">digital soundboard</span> that can send
+      multiple individual channels — either as a multitrack feed or grouped stems —
+      into RemoteMix. 
+      <span className="font-medium"> A stereo output alone will not work</span>,
+      since the engineer needs control of each source to mix properly.
+    </li>
+    <li>Stable <span className="font-medium">internet</span> at the venue.</li>
+    <li>
+      An onsite helper to confirm the console is routed correctly and audio is flowing.
+    </li>
+  </ul>
+</div>
+
 
         <div className="rounded-2xl border bg-white p-6">
           <h2 className="text-xl font-semibold">What Engineers Need</h2>
@@ -131,11 +138,14 @@ export default function HowItWorks() {
     <div>
       <p className="font-medium">What if our console is older?</p>
       <p className="text-gray-700">
-        Many digital boards can send stems or a stereo bus. Your engineer will recommend the simplest routing for your setup.
+        To make remote mixing possible, your console must be able to send multiple individual channels
+        (multitrack or at least grouped stems) into RemoteMix. A simple stereo output won’t work,
+        since the engineer needs access to each source in order to balance the mix.
       </p>
     </div>
   </div>
 </section>
+
 
   
 
